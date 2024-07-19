@@ -1,7 +1,7 @@
 import axios from "axios";
 console.log(process.env.REACT_APP_API_KEY);
 const API_KEY = process.env.REACT_APP_API_KEY;
-const BASE_URL = "https://newsapi.org/v2";
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 const pageSize = 9;
 export const fetchPosts = async (page) => {
   try {
